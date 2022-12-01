@@ -1,5 +1,7 @@
 --------------------How to use Map Selector ?--------------------
 
+-Start the Lib installer.py
+
 -Start L4D2_map_selector.py
 
 -Check if L4D2 is running :
