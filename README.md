@@ -1,6 +1,6 @@
 --------------------How to use Map Selector ?--------------------
 
--(Obvious) install python
+-(Obvious) install python https://www.python.org
 
 -Start the Lib installer.py
 
