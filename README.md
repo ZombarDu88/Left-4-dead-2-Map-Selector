@@ -27,8 +27,9 @@ Made by NoNoDu88
 
 Tested and corrected by NoNoDu88 and FoxTroT
 
-For any question my discord is :N̶̫̽o̵̳͋N̴͙̍o̴͖͝D̴̖̀ǘ̶̩8̷̜̾8̸͍́#2891
+For any question/sugestions my discord is :N̶̫̽o̵̳͋N̴͙̍o̴͖͝D̴̖̀ǘ̶̩8̷̜̾8̸͍́#2891
 
 ------------------Notes------------------
 
 Only for windows os =( (i use wmic)
+I regularly update this program =)
