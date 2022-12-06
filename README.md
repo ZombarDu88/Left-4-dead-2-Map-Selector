@@ -34,3 +34,5 @@ For any question/sugestions my discord is :N̶̫̽o̵̳͋N̴͙̍o̴͖͝D̴̖̀u�
 Only for windows os =( (i use wmic)
 
 I regularly update this program =)
+
+for analysing the program: https://www.virustotal.com/gui/home/upload
