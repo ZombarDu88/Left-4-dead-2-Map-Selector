@@ -2,6 +2,8 @@
 
 -(Obvious) install python https://www.python.org
 
+-Set your game as fullscreen
+
 -Start the Lib installer.py
 
 -Start L4D2_map_selector.py
