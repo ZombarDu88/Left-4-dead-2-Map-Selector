@@ -7,6 +7,7 @@ import getpass
 import tkinter
 import pygetwindow as gw
 from tkinter import messagebox
+from pypresence import Presence
 
 def L4D2_State(*args):
 
@@ -39,14 +40,14 @@ def Start_L4D2():
 		try:
 			if Partition.find("C:"):
 				direction = os.startfile("C:/Users/"+User+"/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Steam/Left 4 Dead 2.url")
-				time.sleep(5)
+				time.sleep(15)
 				print("\033[1;32mleft4dead2.exe is succefully started\033[0;37m")
 				print("\033[1;32msucces detect: left4dead2.exe\033[0;37m")
 				var_l4D2.set("L4D2: is launched =)")
 
 			elif Partition.find("D:"):
 				direction = os.startfile("D:/Users/"+User+"/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Steam/Left 4 Dead 2.url")
-				time.sleep(5)
+				time.sleep(15)
 				print("\033[1;32mleft4dead2.exe is succefully started\033[0;37m")
 				print("\033[1;32msucces detect: left4dead2.exe\033[0;37m")
 				var_l4D2.set("L4D2: is not launched =(")
@@ -168,6 +169,22 @@ def Finish_random():
 			print("\033[0;31mleft4dead2.exe is not launched\033[0;37m")
 			var_l4D2.set("You can't finish spin L4D2: is not launched")
 
+def Discord_Rpc():
+
+	epoch_time = int(time.time())
+	output_discord = os.popen("wmic process get description").read()
+
+	if output_discord.find("Discord.exe") != -1:
+
+		client_id = "XD no"
+		Rpc = Presence(client_id)
+		Rpc.connect()
+
+		Rpc.update("Your code")
+
+	else:
+		print("\033[0;31mDiscord is not launched no rpc\033[0;37m")
+
 def Quitting_Program():
 
 	Quit_Program = messagebox.askquestion("Quit", "Are you sure ?")
@@ -188,6 +205,7 @@ def Quitting_Program():
 def Credits():
 	messagebox.showinfo("L4D2 Map Selector Credits", "Made by NoNoDu88\nTested and corrected by NoNoDu88 and FoxTroT\nKef for this icon =)")
 
+Discord_Rpc()
 mainapp = tkinter.Tk()
 os.system("color")
 
@@ -198,15 +216,16 @@ mainapp.wm_iconphoto(False, photo)
 
 mainapp.title("L4D2 Map Selector v1.1")
 mainapp.geometry("+300+300")
+mainapp.configure(bg="grey")
 
 with open("setting.txt", "r" , encoding="utf-8") as Action_Time:
 	Action_Time.seek(45)
 	Time_Spin_End = Action_Time.readline()
 
-label_welcome = tkinter.Label(mainapp, text="Welcome to L4D2 Map Selector v1.1")
+label_welcome = tkinter.Label(mainapp, bg="grey", text="Welcome to L4D2 Map Selector v1.1")
 label_welcome.pack()
 
-label_space = tkinter.Label(mainapp, text="---")
+label_space = tkinter.Label(mainapp, bg="grey", text="---")
 label_space.pack()
 
 buttom_spin = tkinter.Button(mainapp, text="Spin", width=25, command=Spin)
@@ -215,30 +234,33 @@ buttom_spin.pack()
 button_Return_Game = tkinter.Button(mainapp, text="Return to game", width=20, command=Return_to_game)
 button_Return_Game.pack()
 
+space = tkinter.Label(mainapp, bg="grey", text="---")
+space.pack()
+
 button_End = tkinter.Button(mainapp, text="Finish Esc", width=17, command=Finish_random)
 button_End.pack()
 
 button_Credits = tkinter.Button(mainapp, text="Credits", width=10, command=Credits)
 button_Credits.pack()
 
-label_space2 = tkinter.Label(mainapp, text="---")
+label_space2 = tkinter.Label(mainapp, bg="grey", text="---")
 label_space2.pack()
 
 buttom_check = tkinter.Button(mainapp, text="Check L4D2 is launched", width=25, command=L4D2_State)
 buttom_check.pack()
 
-buttom_Start_L4D2 = tkinter.Button(mainapp, text="Start L4D2", width=17, command=Start_L4D2)
+buttom_Start_L4D2 = tkinter.Button(mainapp, text="Start L4D2", width=17, bg="#00ff00", command=Start_L4D2)
 buttom_Start_L4D2.pack()
 
-buttom_quit = tkinter.Button(mainapp, text="Quit Program", command=Quitting_Program)
+buttom_quit = tkinter.Button(mainapp, text="Quit Program", bg="#ff0000", command=Quitting_Program)
 buttom_quit.pack()
 
-label_space3 = tkinter.Label(mainapp, text="")
+label_space3 = tkinter.Label(mainapp, bg="grey", text="")
 label_space3.pack()
 
 var_l4D2 = tkinter.StringVar()
 var_l4D2.trace("r", L4D2_State)
-label_stat = tkinter.Label(mainapp, textvariable=var_l4D2)
+label_stat = tkinter.Label(mainapp, bg="grey", textvariable=var_l4D2)
 label_stat.pack()
 
 mainapp.mainloop()
