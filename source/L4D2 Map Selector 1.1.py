@@ -180,7 +180,7 @@ def Discord_Rpc():
 		Rpc = Presence(client_id)
 		Rpc.connect()
 
-		Rpc.update("Your code")
+		Rpc.update()
 
 	else:
 		print("\033[0;31mDiscord is not launched no rpc\033[0;37m")
