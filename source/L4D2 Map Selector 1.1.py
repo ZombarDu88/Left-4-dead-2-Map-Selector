@@ -16,14 +16,14 @@ def L4D2_State(*args):
 	if L4D2_is_launched.find("left4dead2.exe") != -1:
 		messagebox.showinfo("Just checking...", "L4D2 is launched")
 		print("\033[1;32msucces detect: left4dead2.exe\033[0;37m")
-		var_l4D2.set("L4D2: is launched =)")
+		var_l4D2.set(l4D2_True)
 
 	else:
 		messagebox.showerror("Just checking...", "L4D2 is not launched =(")
 		print("\033[0;31mleft4dead2.exe is not launched\033[0;37m")
-		var_l4D2.set("L4D2: is not launched =(")
+		var_l4D2.set(l4D2_False)
 
-def Start_L4D2():
+def Start_L4D2(Succes_cmd="\033[1;32mleft4dead2.exe is succefully started\033[0;37m", Detect_cmd="\033[1;32msucces detect: left4dead2.exe\033[0;37m"):
 
 	L4D2_is_launched = os.popen("wmic process get description").read()
 
@@ -41,23 +41,21 @@ def Start_L4D2():
 			if Partition.find("C:"):
 				direction = os.startfile("C:/Users/"+User+"/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Steam/Left 4 Dead 2.url")
 				time.sleep(15)
-				print("\033[1;32mleft4dead2.exe is succefully started\033[0;37m")
-				print("\033[1;32msucces detect: left4dead2.exe\033[0;37m")
-				var_l4D2.set("L4D2: is launched =)")
+				print(Succes_cmd,"\n"+Detect_cmd)
+				var_l4D2.set(l4D2_True)
 
 			elif Partition.find("D:"):
 				direction = os.startfile("D:/Users/"+User+"/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Steam/Left 4 Dead 2.url")
 				time.sleep(15)
-				print("\033[1;32mleft4dead2.exe is succefully started\033[0;37m")
-				print("\033[1;32msucces detect: left4dead2.exe\033[0;37m")
-				var_l4D2.set("L4D2: is not launched =(")
+				print(Succes_cmd,"\n"+Detect_cmd)
+				var_l4D2.set(l4D2_False)
 
 		except:
 			print("Left4Dead2 is not installed on data or ssd =(")
 			var_l4D2.set("L4D2: is not installed on your computer =(")
 			messagebox.showerror("Error !", "Left4Dead2 is not installed on data or ssd =(\nnot possible to start it")
 			print("\033[0;31mleft4dead2.exe is not launched\033[0;37m")
-			var_l4D2.set("L4D2: is not launched =(")
+			var_l4D2.set(l4D2_False)
 
 def Spin():
 
@@ -77,8 +75,10 @@ def Spin():
 		time.sleep(Time_Spin)
 
 		maps = random.randrange(0, 90)
-		pyautogui.moveTo(5000, 5000)
+		maps_str = str(maps)
+		print("Spin=",maps_str+"/90")
 
+		pyautogui.moveTo(5000, 5000)
 		pyautogui.press("enter")
 
 		if maps >= 20:
@@ -96,7 +96,7 @@ def Spin():
 				time.sleep(0.50)
 				pyautogui.press("down")
 						
-		elif maps < 20:
+		elif maps <= 19:
 			maps_reduce = maps -3
 
 			for i in range(maps_reduce):
@@ -105,10 +105,16 @@ def Spin():
 			for i in range(3):
 				time.sleep(0.50)
 				pyautogui.press("down")
+
+		elif maps <= 5:
+
+			for i in range(maps):
+				time.sleep(0.50)
+				pyautogui.press("down")
 						
 		#pyautogui.hotkey("win", "prntscrn") #screen function for send to your friend disabled.
 		pyautogui.press("enter")
-		var_l4D2.set("L4D2: is launched =)")
+		var_l4D2.set(l4D2_True)
 		time.sleep(2)
 		
 		Python.activate()
@@ -157,7 +163,7 @@ def Finish_random():
 		L4D2_window.maximize()
 		time.sleep(Time_End)
 		pyautogui.press("esc")
-		var_l4D2.set("L4D2: is launched =)")
+		var_l4D2.set(l4D2_True)
 
 	else:
 		Spin_message = messagebox.askquestion("Can't Finish Spin", "You can't finish spin L4D2 is not launched start L4D2 ?")
@@ -176,7 +182,7 @@ def Discord_Rpc():
 
 	if output_discord.find("Discord.exe") != -1:
 
-		client_id = "XD no"
+		client_id = "No XD"
 		Rpc = Presence(client_id)
 		Rpc.connect()
 
@@ -205,16 +211,19 @@ def Quitting_Program():
 def Credits():
 	messagebox.showinfo("L4D2 Map Selector Credits", "Made by NoNoDu88\nTested and corrected by NoNoDu88 and FoxTroT\nKef for this icon =)")
 
+l4D2_True="L4D2: is launched =)" 
+l4D2_False="L4D2: is not launched =("
+
 Discord_Rpc()
 mainapp = tkinter.Tk()
-os.system("color")
 
+os.system("color")
 pyautogui.FAILSAFE = False
 
 photo = tkinter.PhotoImage(file = "Pictures/icon.png")
 mainapp.wm_iconphoto(False, photo)
 
-mainapp.title("L4D2 Map Selector v1.1")
+mainapp.title("L4D2 Map Selector v1.1.5")
 mainapp.geometry("+300+300")
 mainapp.configure(bg="grey")
 
@@ -222,7 +231,7 @@ with open("setting.txt", "r" , encoding="utf-8") as Action_Time:
 	Action_Time.seek(45)
 	Time_Spin_End = Action_Time.readline()
 
-label_welcome = tkinter.Label(mainapp, bg="grey", text="Welcome to L4D2 Map Selector v1.1")
+label_welcome = tkinter.Label(mainapp, bg="grey", text="Welcome to L4D2 Map Selector v1.1.5")
 label_welcome.pack()
 
 label_space = tkinter.Label(mainapp, bg="grey", text="---")
