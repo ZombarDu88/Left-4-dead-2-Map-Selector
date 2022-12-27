@@ -211,7 +211,6 @@ def Quitting_Program():
 def Credits():
 	messagebox.showinfo("L4D2 Map Selector Credits", "Made by NoNoDu88\nTested and corrected by NoNoDu88 and FoxTroT\nKef for this icon =)")
 
-
 cmd_detect_True="\033[1;32msucces detect: left4dead2.exe\033[0;37m"
 cmd_detect_False="\033[0;31mleft4dead2.exe is not launched\033[0;37m"
 
