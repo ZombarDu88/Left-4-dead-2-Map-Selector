@@ -28,7 +28,7 @@ def Start_L4D2(Succes_start_cmd="\033[1;32mleft4dead2.exe is succefully started\
 	if L4D2_is_launched.find("left4dead2.exe") != -1:
 
 		messagebox.showwarning("Just checking...", "L4D2 as already launched")
-		print("left4dead2.exe: as already launched")
+		print("\033[0;33mleft4dead2.exe: as already launched\033[0;37m")
 		var_l4D2.set("L4D2: as already launched")
 
 	else:		
@@ -62,11 +62,11 @@ def Spin():
 	if L4D2_is_launched.find("left4dead2.exe") != -1:
 		Python = gw.getActiveWindow()
 
+		pyautogui.moveTo(5000, 5000)
+
 		with open("setting.txt", "r" , encoding="utf-8") as Action_Time:
 			Action_Time.seek(45)
 			Time_Spin = float(Action_Time.readline())
-
-		pyautogui.moveTo(5000, 5000)
 
 		L4D2_window = gw.getWindowsWithTitle("Left 4 Dead 2")[0]
 		L4D2_window.maximize()
@@ -76,7 +76,6 @@ def Spin():
 		maps_str = str(maps)
 		print("Spin=",maps_str+"/90")
 
-		pyautogui.moveTo(5000, 5000)
 		pyautogui.press("enter")
 
 		if maps >= 20:
@@ -155,10 +154,9 @@ def Finish_random():
 			Action_Time.seek(45)
 			Time_End = float(Action_Time.readline())
 
-		pyautogui.moveTo(5000, 5000)
 		L4D2_window = gw.getWindowsWithTitle("Left 4 Dead 2")[0]
-
 		L4D2_window.maximize()
+
 		time.sleep(Time_End)
 		pyautogui.press("esc")
 		var_l4D2.set(l4D2_True)
@@ -193,6 +191,8 @@ def Quitting_Program():
 def Credits():
 	messagebox.showinfo("L4D2 Map Selector Credits", "Made by NoNoDu88\nTested and corrected by NoNoDu88 and FoxTroT\nKef for this icon =)")
 
+os.system("color")
+
 cmd_detect_True="\033[1;32msucces detect: left4dead2.exe\033[0;37m"
 cmd_detect_False="\033[0;31mleft4dead2.exe is not launched\033[0;37m"
 
@@ -202,7 +202,6 @@ l4D2_False="L4D2: is not launched =("
 Discord_Rpc()
 mainapp = tkinter.Tk()
 
-os.system("color")
 pyautogui.FAILSAFE = False
 
 photo = tkinter.PhotoImage(file = "Pictures/icon.png")
@@ -211,10 +210,6 @@ mainapp.wm_iconphoto(False, photo)
 mainapp.title("L4D2 Map Selector v1.1.5")
 mainapp.geometry("+300+300")
 mainapp.configure(bg="grey")
-
-with open("setting.txt", "r" , encoding="utf-8") as Action_Time:
-	Action_Time.seek(45)
-	Time_Spin_End = Action_Time.readline()
 
 label_welcome = tkinter.Label(mainapp, bg="grey", text="Welcome to L4D2 Map Selector v1.1.5")
 label_welcome.pack()
@@ -231,7 +226,7 @@ button_Return_Game.pack()
 space = tkinter.Label(mainapp, bg="grey", text="---")
 space.pack()
 
-button_End = tkinter.Button(mainapp, text="Finish Esc", width=17, command=Finish_random)
+button_End = tkinter.Button(mainapp, text="Finish and press Esc", width=17, command=Finish_random)
 button_End.pack()
 
 button_Credits = tkinter.Button(mainapp, text="Credits", width=10, command=Credits)
