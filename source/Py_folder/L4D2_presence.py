@@ -10,12 +10,11 @@ def Discord_Rpc():
 	if output_discord.find("Discord.exe") != -1:
 
 		try:
-			client_id = "1056228703073476731"
+			client_id = "XD no"
 			Rpc = Presence(client_id)
 			Rpc.connect()
 
-			Rpc.update(details="ver 1.1.5", state="Credits: NoNoDu88, FoxTroT, Kef", large_image="l4d2_map_selector_icon", start=epoch_time,
-			buttons=[{"label": "The Program\U0001F40D (1.1.5)" , "url": "https://github.com/ZombarDu88/Left-4-dead-2-Map-Selector"}])
+			Rpc.update()
 			print("\033[0;35mThe Discord rpc is \033[1;32mon\033[0;37m")
 
 		except:
