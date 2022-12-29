@@ -12,9 +12,14 @@ try:
 except:
 	fail = print("Installing libs...")
 
-	os.system("pip install pyautogui")
-	os.system("pip install pygetwindow")
-	os.system("pip install pypresence")
+	try:
+		os.system("pip install pyautogui")
+		os.system("pip install pygetwindow")
+		os.system("pip install pypresence")
 
-	print("Required lib are installed you can launch the program =)")
-	input("")
+		print("Required lib are installed you can launch the program =)")
+		input("")
+
+	except:
+		print("ERROR: pip is not installed or idk")
+		input("")
