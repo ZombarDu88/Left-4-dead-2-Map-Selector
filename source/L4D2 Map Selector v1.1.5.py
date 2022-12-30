@@ -60,15 +60,16 @@ def Spin():
 	L4D2_is_launched = os.popen("wmic process get description").read()
 
 	if L4D2_is_launched.find("left4dead2.exe") != -1:
-		Python = gw.getActiveWindow()
-
+		
+		L4D2_window = gw.getWindowsWithTitle("Left 4 Dead 2")[0]
+		Python_Ui = gw.getWindowsWithTitle("L4D2 Map Selector")[0]
 		pyautogui.moveTo(5000, 5000)
 
 		with open("setting.txt", "r" , encoding="utf-8") as Action_Time:
-			Action_Time.seek(45)
+			Action_Time.seek(42)
 			Time_Spin = float(Action_Time.readline())
+			print("Time set on txt =",Time_Spin)
 
-		L4D2_window = gw.getWindowsWithTitle("Left 4 Dead 2")[0]
 		L4D2_window.maximize()
 		time.sleep(Time_Spin)
 
@@ -112,9 +113,9 @@ def Spin():
 		#pyautogui.hotkey("win", "prntscrn") #screen function for send to your friend disabled.
 		pyautogui.press("enter")
 		var_l4D2.set(l4D2_True)
+
 		time.sleep(2)
-		
-		Python.activate()
+		Python_Ui.activate()
 
 	else:
 		Spin_message = messagebox.askquestion("Can't Spin", "You can't spin L4D2 is not launched start L4D2 ?")
@@ -151,8 +152,9 @@ def Finish_random():
 	if L4D2_is_launched.find("left4dead2.exe") != -1:
 
 		with open("setting.txt", "r" , encoding="utf-8") as Action_Time:
-			Action_Time.seek(45)
+			Action_Time.seek(42)
 			Time_End = float(Action_Time.readline())
+			print("Time set on txt =",Time_End)
 
 		L4D2_window = gw.getWindowsWithTitle("Left 4 Dead 2")[0]
 		L4D2_window.maximize()
@@ -190,7 +192,7 @@ def Quitting_Program():
 
 def Credits():
 	messagebox.showinfo("L4D2 Map Selector Credits", "Made by NoNoDu88\nTested and corrected by NoNoDu88 and FoxTroT\nKef for this icon =)")
-
+	
 os.system("color")
 
 cmd_detect_True="\033[1;32msucces detect: left4dead2.exe\033[0;37m"
@@ -200,8 +202,8 @@ l4D2_True="L4D2: is launched =)"
 l4D2_False="L4D2: is not launched =("
 
 Discord_Rpc()
-mainapp = tkinter.Tk()
 
+mainapp = tkinter.Tk()
 pyautogui.FAILSAFE = False
 
 photo = tkinter.PhotoImage(file = "Pictures/icon.png")
@@ -226,10 +228,10 @@ button_Return_Game.pack()
 space = tkinter.Label(mainapp, bg="grey", text="---")
 space.pack()
 
-button_End = tkinter.Button(mainapp, text="Finish and press Esc", width=17, command=Finish_random)
+button_End = tkinter.Button(mainapp, text="Return to game and press Esc", width=25, command=Finish_random)
 button_End.pack()
 
-button_Credits = tkinter.Button(mainapp, text="Credits", width=10, command=Credits)
+button_Credits = tkinter.Button(mainapp, text="Credits", width=15, command=Credits)
 button_Credits.pack()
 
 label_space2 = tkinter.Label(mainapp, bg="grey", text="---")
@@ -251,5 +253,8 @@ var_l4D2 = tkinter.StringVar()
 var_l4D2.trace("r", L4D2_State)
 label_stat = tkinter.Label(mainapp, bg="grey", textvariable=var_l4D2)
 label_stat.pack()
+
+CMD = gw.getWindowsWithTitle("C:\WINDOWS\py.exe")[0]
+CMD.minimize()
 
 mainapp.mainloop()
