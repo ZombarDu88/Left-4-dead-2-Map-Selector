@@ -17,7 +17,7 @@
 
 -Go back in L4D2 map Selector and press 
 
--If you agree with the selected map, press "Finish" to close the program and go back in the game or "Return to game" but it won't close the game
+-If you agree with the selected map, press "Return to game and press Esc" if you are in multiplayer or "Return to game" if you are in single
 
 -If you don't agree with the selected map, press "Spin" again to reroll the Map Chooser
 
