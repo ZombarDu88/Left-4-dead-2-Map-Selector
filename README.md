@@ -2,7 +2,7 @@
 
 -(Obvious) install python https://www.python.org
 
--Set your game as fullscreen
+-Set your game as fullscreen preferably in the game launch options (-fullscreen)
 
 -Start the Lib installer.py
 
