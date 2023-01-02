@@ -31,7 +31,7 @@ Tested and corrected by NoNoDu88 and FoxTroT
 
 Kef for the creation of the icon of this program =)
 
-For any question/sugestions my discord is :N̶̫̽o̵̳͋N̴͙̍o̴͖͝D̴̖̀ǘ̶̩8̷̜̾8̸͍́#2891
+For any question/sugestions my discord is :NoNoDu88#2891
 
 ------------------Notes------------------
 
