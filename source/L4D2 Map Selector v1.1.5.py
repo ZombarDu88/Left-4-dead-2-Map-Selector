@@ -53,7 +53,6 @@ def Start_L4D2(Succes_start_cmd="\033[1;32mSucces detect: left4dead2.exe\n\033[1
 			time.sleep(2)
 
 		if L4D2_launched == False:
-			CMD.restore()
 			print("\033[0;31mLeft4Dead2 is not installed")
 			time.sleep(2)
 			CMD.minimize()
