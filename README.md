@@ -15,7 +15,7 @@
 
 -Place mouse cursor in "Select map" menu
 
--Go back in L4D2 map Selector and press 
+-Go back in L4D2 map Selector and press with windows key or alt tap
 
 -If you agree with the selected map, press "Return to game and press Esc" if you are in multiplayer or "Return to game" if you are in single
 
