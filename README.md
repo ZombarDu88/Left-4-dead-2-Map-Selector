@@ -1,5 +1,5 @@
 
-<h1>------------------How to use Map Selector ?------------------</h1>
+<h1>-----------------How to use Map Selector ?-----------------</h1>
 
 -(Obvious) install ***Python*** https://www.python.org
 
