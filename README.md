@@ -22,8 +22,6 @@
 
 <h2>--------------------Credits--------------------</h2>
 
-L4D2 Map Selector
-
 Made by ``NoNoDu88``
 
 Tested and corrected by ``NoNoDu88`` and ``FoxTroT``
