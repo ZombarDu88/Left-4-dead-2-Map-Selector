@@ -11,7 +11,7 @@
 
 -Create a lobby or go in Singleplayer
 
--Place mouse cursor in "Select map" menu
+-Place mouse cursor in "Select map" menu (important)
 
 -Go back in L4D2 map Selector and press with windows key or alt tap
 
