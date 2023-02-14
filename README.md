@@ -22,7 +22,7 @@
 
 <h2>--------------------Credits--------------------</h2>
 
-L4D2 Map Chooser
+L4D2 Map Selector
 
 Made by ``NoNoDu88``
 
