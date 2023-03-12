@@ -18,7 +18,7 @@
 
 -If you agree with the selected map, press ``"Return to game and press Esc"`` if you are in multiplayer or ``"Return to game"`` if you are in single
 
--If you don't agree with the selected map, press ``"Spin"`` again to reroll the Map Chooser
+-If you don't agree with the selected map, press ``"Spin"`` again to reroll the option
 
 <h2>--------------------Credits--------------------</h2>
 
