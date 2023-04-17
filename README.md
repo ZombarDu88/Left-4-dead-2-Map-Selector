@@ -12,11 +12,11 @@
 
 -Create a lobby or go in Singleplayer
 
--Place mouse cursor in ``"Select map"`` menu (important)
+-Place your mouse cursor in ``"Select map"`` menu (important)
 
 -Go back in L4D2 map Selector and press with ``windows key`` or ``alt tap``
 
--If you agree with the selected map, press ``"Return to game and press Esc"`` if you are in multiplayer or ``"Return to game"`` if you are in single
+-If you agree with the selected map, press ``"Return to game and press Esc"`` if you are in multiplayer or ``"Return to game"`` if you are in single mode
 
 -If you don't agree with the selected map, press ``"Spin"`` again to reroll the option
 
