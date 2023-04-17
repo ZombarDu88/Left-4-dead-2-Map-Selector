@@ -8,7 +8,7 @@
 -Start ``L4D2_map_selector.py``
 
 -Check if L4D2 is running :
-   -If not launch L4D2 via Steam or pres "Start L4D2"
+   -If not launch L4D2 via Steam pres "Start L4D2"
 
 -Create a lobby or go in Singleplayer
 
