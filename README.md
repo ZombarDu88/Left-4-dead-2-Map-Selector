@@ -7,12 +7,11 @@
 
 -Start ``L4D2_map_selector.py``
 
--Check if L4D2 is running :
-   -If not launch L4D2 via Steam pres "Start L4D2"
+-Check if L4D2 is running If L4D2 is not lauched pres "Start L4D2"
 
 -Create a lobby or go in Singleplayer
 
--Place your mouse cursor in ``"Select map"`` menu (important)
+-Place your mouse cursor in ``"Select map"`` menu (very important)
 
 -Go back in L4D2 map Selector and press with ``windows key`` or ``alt tap``
 
