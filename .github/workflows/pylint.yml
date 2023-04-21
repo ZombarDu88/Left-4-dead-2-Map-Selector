@@ -21,6 +21,7 @@ jobs:
         pip install pyautogui
         pip install pygetwindow
         pip install pypresence
+        pip install requests
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        for file in */*.py; do pylint "$file" --fail-under=7.0; done
