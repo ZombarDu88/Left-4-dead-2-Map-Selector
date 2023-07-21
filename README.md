@@ -7,8 +7,6 @@
 
 -Now start the `L4D2_map_selector.py` program
 
--Check if L4D2 is running If L4D2 is not lauched pres `"Start L4D2"`
-
 -Set up your switching time if you whant (Time for switching program to game depend on your pc default value are fixed in 5 seconds)
 
 -Create a lobby or go in Singleplayer
