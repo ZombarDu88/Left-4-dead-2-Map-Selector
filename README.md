@@ -31,7 +31,7 @@ For any question/sugestions my discord is :`NoNoDu88#2891`
 
 <h2>------------------Notes------------------</h2>
 
-Only for ***windows os*** =( (i use wmic)
+Only for ***windows os*** =( (i use wmic) -> https://en.wikipedia.org/wiki/Windows_Management_Instrumentation
 
 I regularly update this program =)
 
