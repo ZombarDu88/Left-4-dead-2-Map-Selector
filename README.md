@@ -14,7 +14,7 @@ pip install pyautogui pygetwindow pypresence requests
 
 -Create a `multiplayers lobby` or go in `Singleplayer`
 
--Place your mouse cursor in `"Select map"` menu (very important)
+-Place your mouse cursor in `"Select map"` menu not press enter(very important)
 
 -Go back in L4D2 map Selector with `windows key` or `alt tap`
 
