@@ -28,7 +28,7 @@ Made by `NoNoDu88`
 
 Tested and corrected by `NoNoDu88` and `FoxTroT`
 
-``Kef`` for the creation of the icon of this program =)
+``Kef`` for the nice logo =)
 
 For any question/sugestions my discord is :`NoNoDu88#2891`
 
