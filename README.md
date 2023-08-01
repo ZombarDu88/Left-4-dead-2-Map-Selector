@@ -3,7 +3,10 @@
 
 -(Obvious) install ***Python*** https://www.python.org
 
--Start the `lib_installer_and_updater_v1.0.pyw` and click on `"Install libs"` button
+-Start the `lib_installer_and_updater_v1.0.pyw` and click on `"Install libs"` button or tape this command into your `cmd`:
+```
+pip install pyautogui pygetwindow pypresence requests
+```
 
 -Now start the `L4D2_map_selector.py` program
 
