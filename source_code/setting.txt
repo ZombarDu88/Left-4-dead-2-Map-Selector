@@ -1,0 +1,1 @@
+Time for switching program to game (depend on your pc default is 5 seconds) = 5
