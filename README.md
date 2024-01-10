@@ -11,6 +11,7 @@ pip install pyautogui pygetwindow pypresence requests
 -Now start the `L4D2_map_selector.py` program
 
 -Set up your switching time if you whant `(Time for switching program to game depend on your pc default value are fixed in 5 seconds)`
+you can change it via `Setting tab` in gui or dirrecly in `"setting.txt"`
 
 -Create a `multiplayers lobby` or go in `Singleplayer`
 
