@@ -14,9 +14,9 @@ pip install pyautogui pygetwindow pypresence requests
 
 -Create a `multiplayers lobby` or go in `Singleplayer`
 
--Place your mouse cursor in `"Select map"` menu not press enter(very important)
-
 -Go back in L4D2 map Selector with `windows key` or `alt tap`
+
+-Press `"Spin"` button
 
 -If you agree with the selected map, press `"Close choice (multi lobby)"` if you are in multiplayer or `"Return to game"` if you are in single mode
 
