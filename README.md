@@ -25,7 +25,7 @@ you can change it via `Setting tab` in gui or dirrecly in `"setting.txt"`
 
 <h2>--------------------Overview--------------------</h2>
 
--The ui
+The ui ->
 
 ![](https://cdn.discordapp.com/attachments/881653010772684851/1231857156618453013/image.png?ex=662757e0&is=66260660&hm=debf8697bc1b5d36735a679ce5ae0e1802674fcb0418e08ffa814cd07bdfd9b3&)
 ![](https://cdn.discordapp.com/attachments/881653010772684851/1231857021851144253/image.png?ex=66387b40&is=66260640&hm=aa0105f33248b3890450227245abc050ccdb2cf4bca27d74712b56e5027c347d&)
