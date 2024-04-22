@@ -66,7 +66,7 @@ The ui ->
 
 ![](https://cdn.discordapp.com/avatars/227837551400976384/7edf10d0857adaa416a18a8f2eb853d2.webp?size=80) ``Kef`` for the nice logo =)
 
-For any question/sugestions my discord is :`NoNoDu88#2891`
+For any question/sugestions my discord is :`nonodu88`
 
 <h2>------Notes------</h2>
 
