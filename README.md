@@ -54,9 +54,9 @@ you can change it via `Setting tab` in gui or dirrecly in `"setting.txt"`
 
 `Determine switching time` : Counts the time for the game to go full screen (depend of your pc)
 
-`Minimize CMD` Hide the command prompt of the program if it is visible
+`Minimize CMD` : Hide the command prompt of the program if it is visible
 
-`Show CMD` Show command prompt of the program for displaying interresting information about user actions and potentialy issus =(
+`Show CMD` : Show command prompt of the program for displaying interresting information about user actions and potentialy issus =(
 <h2>-------------Credits------------</h2>
 
 ![](https://cdn.discordapp.com/attachments/881653010772684851/1231870264850251816/fox_nono.jpg?ex=66388796&is=66261296&hm=6700097a4842774eada47b7df099a13ad748c8cd0a9a06aa3747fc76e964ac10&) Made by `NoNoDu88`
