@@ -46,7 +46,7 @@ The ui ->
 
 `Quit program` : Just stop actual process
 
-`Credits` : display the creator and contributors =)
+`Credits` : Display the creator and contributors =)
 
 2 Buttons ->
 
