@@ -1,5 +1,5 @@
 
-<h1>-----------------Quick use  ?-----------------</h1>
+<h1>-----------------Quick use-----------------</h1>
 
 -(Obvious) install ***Python*** https://www.python.org
 
