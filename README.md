@@ -59,7 +59,7 @@ The ui ->
 `Show CMD` : Show command prompt of the program for displaying interresting information about user actions and potentialy issus =(
 <h2>-------------Credits------------</h2>
 
-![](https://cdn.discordapp.com/attachments/881653010772684851/1231870264850251816/fox_nono.jpg?ex=66388796&is=66261296&hm=6700097a4842774eada47b7df099a13ad748c8cd0a9a06aa3747fc76e964ac10&) Made by `NoNoDu88`
+![](https://cdn.discordapp.com/attachments/881653010772684851/1231870264850251816/fox_nono.jpg?ex=664cf6d6&is=664ba556&hm=b29d7228bc9907b71b80930bf3c73d27fd06d778aa7ff98fa9443d2aed624c0a&) Made by `NoNoDu88`
 
 ![](https://cdn.discordapp.com/attachments/881653010772684851/1231870264850251816/fox_nono.jpg?ex=66388796&is=66261296&hm=6700097a4842774eada47b7df099a13ad748c8cd0a9a06aa3747fc76e964ac10&) Tested and corrected by `NoNoDu88` and `FoxTroT`
 ![](https://cdn.discordapp.com/avatars/340250161030889472/cbf9e229c19e4141b1dc7d9407739881.webp?size=80)
