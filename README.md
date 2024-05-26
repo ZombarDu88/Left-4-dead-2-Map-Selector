@@ -3,7 +3,7 @@
 
 -(Obvious) install ***Python*** https://www.python.org
 
--Go to the realease tab : https://github.com/ZombarDu88/Left-4-dead-2-Map-Selector/releases and download the latest version
+-Go to the releases tab : https://github.com/ZombarDu88/Left-4-dead-2-Map-Selector/releases and download the latest version
 
 -Start the `lib_installer_and_updater_v1.0.pyw` and click on `"Install libs"` button or tape this command into your `cmd`:
 ```
