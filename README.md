@@ -29,8 +29,8 @@ you can change it via `Setting tab` in gui or dirrecly in `"setting.txt"`
 
 The ui ->
 
-![](https://cdn.discordapp.com/attachments/881653010772684851/1231857156618453013/image.png?ex=664ceaa0&is=664b9920&hm=bd9133ad8d18079d913f906708c2b9c35501393c769d2b40c3dc295c38f571e4&)
-![](https://cdn.discordapp.com/attachments/881653010772684851/1231857021851144253/image.png?ex=664cea80&is=664b9900&hm=961b1f6aa43a8aa1924510b64d4e437562cf925bfb6eea3193903a1640694b0f&)
+![](https://raw.githubusercontent.com/ZombarDu88/Left-4-dead-2-Map-Selector/master/images/1.png)
+![](https://raw.githubusercontent.com/ZombarDu88/Left-4-dead-2-Map-Selector/master/images/2.png)
 
 1 Buttons ->
 
@@ -61,12 +61,12 @@ The ui ->
 `Show CMD` : Show command prompt of the program for displaying interresting information about user actions and potentialy issus =(
 <h2>-------------Credits------------</h2>
 
-![](https://cdn.discordapp.com/attachments/881653010772684851/1231870264850251816/fox_nono.jpg?ex=664cf6d6&is=664ba556&hm=b29d7228bc9907b71b80930bf3c73d27fd06d778aa7ff98fa9443d2aed624c0a&) Made by `NoNoDu88`
+![](https://raw.githubusercontent.com/ZombarDu88/Left-4-dead-2-Map-Selector/master/images/me%20XD.jpg) Made by `NoNoDu88`
 
-![](https://cdn.discordapp.com/attachments/881653010772684851/1231870264850251816/fox_nono.jpg?ex=66388796&is=66261296&hm=6700097a4842774eada47b7df099a13ad748c8cd0a9a06aa3747fc76e964ac10&) Tested and corrected by `NoNoDu88` and `FoxTroT`
-![](https://cdn.discordapp.com/avatars/340250161030889472/cbf9e229c19e4141b1dc7d9407739881.webp?size=80)
+![](https://raw.githubusercontent.com/ZombarDu88/Left-4-dead-2-Map-Selector/master/images/me%20XD.jpg) Tested and corrected by `NoNoDu88` and `FoxTroT`
+![](https://raw.githubusercontent.com/ZombarDu88/Left-4-dead-2-Map-Selector/master/images/fox.webp)
 
-![](https://cdn.discordapp.com/avatars/227837551400976384/7edf10d0857adaa416a18a8f2eb853d2.webp?size=80) ``Kef`` for the nice logo =)
+![](https://raw.githubusercontent.com/ZombarDu88/Left-4-dead-2-Map-Selector/master/images/kef.webp) ``Kef`` for the nice logo =)
 
 For any question/sugestions my discord is :`nonodu88`
 
